@@ -1,0 +1,78 @@
+@import "../../../sass/colors"
+
+:host
+  top: calc(50% - 3.2rem/2)
+  left: calc(50% - 3.2rem/2)
+
+.radio
+  display: flex
+  align-items: center
+  position: relative
+  cursor: pointer
+
+  &.large
+    height: 3.2rem
+
+    .mark
+      height: 3.2rem
+      width: 3.2rem
+
+    .label
+      right: calc(100% + 10px)
+
+  &.medium
+    height: 1.6rem
+    font-size: 1.4rem
+    .mark
+      height: 1.6rem
+      width: 1.6rem
+    .label
+      left: 100%
+
+  &.reverse
+    .mark
+      left: 0
+
+    .label
+      left: calc(3.2rem + 10px)
+
+  &:hover
+    .label
+      color: $color6
+
+    .mark
+      border-color: $color6
+
+  input
+    position: absolute
+    opacity: 0
+    cursor: pointer
+
+    &:checked ~ .mark
+      border-color: $color6
+      box-shadow: 0 0 15px $color4
+
+    &:checked ~ .label
+      color: $color6
+
+  .label
+    position: absolute
+    color: $color4
+    width: max-content
+    text-transform: uppercase
+
+
+  .mark
+    border-radius: 50%
+    border: 2px solid $color4
+    background: $color1
+
+
+.sub-options
+  margin-top: 2.8rem
+  app-radio
+    margin-bottom: 2rem
+    display: block
+
+    &:last-child
+      margin-bottom: 0

@@ -1,0 +1,20 @@
+<label class="radio" [ngClass]="classList">
+  <input name="{{name}}" type="radio" value="{{item.value}}">
+  <span class="label">{{item.label}}</span>
+  <span class="mark"></span>
+</label>
+
+<div class="sub-options" *ngIf="item.options && classList.indexOf('medium') > 0"
+>
+  <app-radio
+    *ngFor="let item of item.options"
+    [item]="item"
+    [classList]="'reverse small'"
+    [name]="name"
+  ></app-radio>
+</div>
+
+
+
+
+

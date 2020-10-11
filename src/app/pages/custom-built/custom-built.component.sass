@@ -1,0 +1,94 @@
+@import "../../../sass/colors"
+
+.configurator
+  display: flex
+  height: 61rem
+  position: relative
+
+.wheel
+  position: absolute
+  height: 45rem
+  width: 45rem
+  left: calc(50% - 45rem / 2)
+  top: calc(50% - 45rem / 2)
+  display: flex
+  align-items: center
+  justify-content: center
+
+.circle
+  display: flex
+  align-items: center
+
+  position: relative
+
+  height: 60rem
+  width: 60rem
+  left: calc(50% - 60rem / 2)
+  top: calc(50% - 60rem / 2)
+
+  $border: 2px
+  background: $color1
+  border-radius: 50%
+  background-clip: padding-box
+  border: $border solid transparent
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: -2
+    margin: -$border
+    border-radius: inherit
+    background: linear-gradient(to bottom, $color1 10%, $color4, $color1 90%)
+
+.parents,
+.options
+  z-index: 2
+
+.parents
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: max-content
+  max-height: 42rem
+  position: absolute
+  right: calc(100% - 3.2rem/2)
+
+.options
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: max-content
+  max-height: 42rem
+  position: absolute
+  left: calc(100% - 3.2rem / 2)
+
+app-radio
+  position: absolute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
