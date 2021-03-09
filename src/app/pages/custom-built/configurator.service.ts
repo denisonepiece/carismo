@@ -19,33 +19,17 @@ export class ConfiguratorService {
             value: 'Option'
           },
           {
-            label: 'Matte forged carbon',
-            value: 'matte-forged-carbon'
+            label: 'Regular 2x2 carbon matte',
+            value: 'regular-2x2-carbon-matte'
           },
           {
-            label: 'Gloss forged carbon',
-            value: 'gloss-forged-carbon'
+            label: 'Forged carbon gloss',
+            value: 'forged-carbon-gloss'
           },
           {
-            label: '2х2 Matte Carbon Fiber',
-            value: '2x2-matte-carbon-fiber'
-          },
-          {
-            label: '2х2 Gloss Carbon Fiber',
-            value: '2x2-gloss-carbon-fiber'
-          },
-          {
-            label: 'Alcatraz',
-            value: 'alcatraz'
-          },
-          {
-            label: 'Leather',
-            value: 'leather'
-          },
-          {
-            label: 'Perforated leather',
-            value: 'perforated-leather'
-          },
+            label: 'Forged carbon matte',
+            value: 'forged-carbon-matte'
+          }
         ]
       },
       {
@@ -53,75 +37,43 @@ export class ConfiguratorService {
         name: 'grip',
         options: [
           {
-            label: 'Unidirectional Gloss Carbon Fiber',
-            value: 'unidirectional-gloss-carbon-fiber'
-          },
-          {
-            label: 'Matte forged carbon',
-            value: 'matte-forged-carbon'
-          },
-          {
-            label: 'Gloss forged carbon',
-            value: 'gloss-forged-carbon'
-          },
-          {
-            label: '2х2 Matte Carbon Fiber',
-            value: '2x2-matte-carbon-fiber'
-          },
-          {
-            label: '2х2 Gloss Carbon Fiber',
-            value: '2x2-gloss-carbon-fiber'
-          },
-          {
-            label: 'Alcatraz',
-            value: 'alcatraz'
-          },
-          {
             label: 'Leather',
             value: 'leather'
           },
           {
-            label: 'Perforated leather',
-            value: 'perforated-leather'
+            label: 'Leather perforated',
+            value: 'leather-perforated'
           },
+          {
+            label: 'Alcantara',
+            value: 'alcantara'
+          }
         ]
       },
       {
-        label: 'STRIP',
-        name: 'strip',
+        label: 'STRIPE',
+        name: 'stripe',
         options: [
           {
-            label: 'Unidirectional Gloss Carbon Fiber',
-            value: 'unidirectional-gloss-carbon-fiber'
+            label: 'Red',
+            value: 'red'
           },
           {
-            label: 'Matte forged carbon',
-            value: 'matte-forged-carbon'
+            label: 'White',
+            value: 'white'
           },
           {
-            label: 'Gloss forged carbon',
-            value: 'gloss-forged-carbon'
+            label: 'Orange',
+            value: 'orange'
           },
           {
-            label: '2х2 Matte Carbon Fiber',
-            value: '2x2-matte-carbon-fiber'
+            label: 'No stripe',
+            value: 'no-stripe'
           },
           {
-            label: '2х2 Gloss Carbon Fiber',
-            value: '2x2-gloss-carbon-fiber'
-          },
-          {
-            label: 'Alcatraz',
-            value: 'alcatraz'
-          },
-          {
-            label: 'Leather',
-            value: 'leather'
-          },
-          {
-            label: 'Perforated leather',
-            value: 'perforated-leather'
-          },
+            label: 'Special request',
+            value: 'special-request'
+          }
         ]
       },
       {
@@ -129,37 +81,25 @@ export class ConfiguratorService {
         name: 'stitching',
         options: [
           {
-            label: 'Unidirectional Gloss Carbon Fiber',
-            value: 'unidirectional-gloss-carbon-fiber'
+            label: 'Red',
+            value: 'red'
           },
           {
-            label: 'Matte forged carbon',
-            value: 'matte-forged-carbon'
+            label: 'White',
+            value: 'white'
           },
           {
-            label: 'Gloss forged carbon',
-            value: 'gloss-forged-carbon'
+            label: 'Orange',
+            value: 'orange'
           },
           {
-            label: '2х2 Matte Carbon Fiber',
-            value: '2x2-matte-carbon-fiber'
+            label: 'No stripe',
+            value: 'no-stripe'
           },
           {
-            label: '2х2 Gloss Carbon Fiber',
-            value: '2x2-gloss-carbon-fiber'
-          },
-          {
-            label: 'Alcatraz',
-            value: 'alcatraz'
-          },
-          {
-            label: 'Leather',
-            value: 'leather'
-          },
-          {
-            label: 'Perforated leather',
-            value: 'perforated-leather'
-          },
+            label: 'Special request',
+            value: 'special-request'
+          }
         ]
       },
       {
@@ -167,20 +107,24 @@ export class ConfiguratorService {
         name: 'extras',
         options: [
           {
-            label: 'Unidirectional Gloss Carbon Fiber',
-            value: 'unidirectional-gloss-carbon-fiber'
+            label: 'Flat top',
+            value: 'flat-top',
           },
           {
-            label: 'Matte forged carbon',
-            value: 'matte-forged-carbon'
+            label: 'Paddles',
+            value: 'paddles'
           },
           {
-            label: 'Gloss forged carbon',
-            value: 'gloss-forged-carbon'
+            label: 'Carbon trim',
+            value: 'carbon-trim'
           },
           {
-            label: '2х2 Matte Carbon Fiber',
-            value: '2x2-matte-carbon-fiber'
+            label: 'Led',
+            value: 'led'
+          },
+          {
+            label: 'Cut top',
+            value: 'cut-top'
           }
         ]
       },

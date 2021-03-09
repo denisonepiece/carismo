@@ -1,28 +1,34 @@
-<div class="container">
+<div class="container page-container">
   <div class="configurator">
+    <h4 class="price">1100$</h4>
     <div class="wheel">
-      <img src="../../../assets/img/wheel/test.png">
+      <img src="../../../assets/img/stock/btm_stock.png">
+      <img src="../../../assets/img/stock/grips_stock.png">
+      <img src="../../../assets/img/stock/shifter_stock.png">
+      <img src="../../../assets/img/stock/top_stock.png">
+      <img src="../../../assets/img/stock/trim_stock.png">
     </div>
     <div class="circle">
       <div class="left">
         <app-radio
           *ngFor="let item of options; index as i;"
           [item]="item"
-          (click)="selectOption(item)"
-          [classList]="'large'"
+          (click)="selectConfiguration(item)"
+          [classList]="'configuration'"
           [name]="'category'"
-          [ngStyle]="{'transform': 'rotate(' + getPosition(i) + 'deg) translate(-300px) rotate(' + -getPosition(i) + 'deg)'}"
+          [ngStyle]="{'transform': 'rotate(' + getPosition(i) + 'deg) translate(-35rem) rotate(' + -getPosition(i) + 'deg)'}"
         ></app-radio>
       </div>
       <div class="right">
         <app-radio
           *ngFor="let item of selectedOption.options; index as i"
           [item]="item"
-          [classList]="'large reverse '"
+          (click)="selectOption(item)"
+          [classList]="'option reverse'"
           [name]="selectedOption.name"
-          [ngStyle]="{'transform': 'rotate(' + getPositionSelected(i) + 'deg) translate(-300px) rotate(' + -getPositionSelected(i) + 'deg)',
-                      'top': 'calc(50% - 3.2rem / 2)',
-                      'left': 'calc(50% - 3.2rem / 2)'}"
+          [ngStyle]="{'transform': 'rotate(' + getPositionSelected(i) + 'deg) translate(-35rem) rotate(' + -getPositionSelected(i) + 'deg)',
+                      'top': 'calc(50% - 4rem / 2)',
+                      'left': 'calc(50% - 4rem / 2)'}"
         ></app-radio>
       </div>
     </div>

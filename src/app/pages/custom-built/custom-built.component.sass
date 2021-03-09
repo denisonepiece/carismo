@@ -1,19 +1,35 @@
 @import "../../../sass/colors"
 
+$circle-size: 70rem
+$wheel-size: 60rem
+
 .configurator
   display: flex
   height: 61rem
   position: relative
+  margin-top: 12rem
+
+.price
+  position: absolute
+  width: 100%
+  text-align: center
+  z-index: 5
+  top: -6.5rem
 
 .wheel
   position: absolute
-  height: 45rem
-  width: 45rem
-  left: calc(50% - 45rem / 2)
-  top: calc(50% - 45rem / 2)
+  height: $wheel-size
+  width: $wheel-size
+  left: calc(50% - #{$wheel-size} / 2)
+  top: calc(50% - #{$wheel-size} / 2)
   display: flex
   align-items: center
   justify-content: center
+
+  img
+    position: absolute
+    width: 100%
+    z-index: 1
 
 .circle
   display: flex
@@ -21,10 +37,10 @@
 
   position: relative
 
-  height: 60rem
-  width: 60rem
-  left: calc(50% - 60rem / 2)
-  top: calc(50% - 60rem / 2)
+  height: $circle-size
+  width: $circle-size
+  left: calc(50% - #{$circle-size} / 2)
+  top: calc(50% - #{$circle-size} / 2)
 
   $border: 2px
   background: $color1

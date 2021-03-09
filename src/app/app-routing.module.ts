@@ -8,16 +8,14 @@ import {ContactComponent} from './pages/contact/contact.component';
 import {AboutComponent} from './pages/about/about.component';
 import {HowToOrderComponent} from './pages/how-to-order/how-to-order.component';
 
-
 const routes: Routes = [
-  // pages
-  {path: '', component: MainComponent, data: {animation: 'home'}},
-  {path: 'catalog', component: CatalogComponent, data: {animation: 'catalog'}},
-  {path: 'custom-built', component: CustomBuiltComponent, data: {animation: 'custom-built'}},
-  {path: 'media', component: MediaComponent, data: {animation: 'media'}},
-  {path: 'about', component: AboutComponent, data: {animation: 'about'}},
-  {path: 'how-to-order', component: HowToOrderComponent, data: {animation: 'how-to-order'}},
-  {path: 'contact', component: ContactComponent, data: {animation: 'contact'}},
+  {path: '', component: MainComponent},
+  {path: 'catalog', component: CatalogComponent},
+  {path: 'custom-built', component: CustomBuiltComponent},
+  {path: 'media', component: MediaComponent},
+  {path: 'about', component: AboutComponent},
+  {path: 'how-to-order', component: HowToOrderComponent},
+  {path: 'contact', component: ContactComponent},
 ];
 
 @NgModule({

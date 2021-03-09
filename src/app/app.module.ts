@@ -13,13 +13,12 @@ import { MediaComponent } from './pages/media/media.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HowToOrderComponent } from './pages/how-to-order/how-to-order.component';
-import {HttpClientModule} from '@angular/common/http';
-import {AngularSvgIconModule} from 'angular-svg-icon';
+import { HttpClientModule } from '@angular/common/http';
+import { AngularSvgIconModule } from 'angular-svg-icon';
 import { RadioComponent } from './components/radio/radio.component';
 
 @NgModule({
   declarations: [
-    // pages
     AppComponent,
     MainComponent,
     HeaderComponent,
@@ -42,4 +41,5 @@ import { RadioComponent } from './components/radio/radio.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

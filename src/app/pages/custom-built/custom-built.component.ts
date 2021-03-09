@@ -11,6 +11,7 @@ import {Option} from './option';
 export class CustomBuiltComponent implements OnInit {
   public options: Array<Option>;
   public selectedOption: Option;
+  public imagesList: any;
 
   constructor(
     confService: ConfiguratorService,
@@ -29,8 +30,12 @@ export class CustomBuiltComponent implements OnInit {
     return (distance + index * (100 / this.selectedOption.options.length)) + (50 / this.selectedOption.options.length);
   }
 
-  public selectOption(item: Option) {
+  public selectConfiguration(item: Option) {
     this.selectedOption = item;
+  }
+
+  public selectOption(item: Option) {
+
   }
 
   ngOnInit() {}
